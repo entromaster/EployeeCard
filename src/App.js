@@ -1,20 +1,15 @@
-import './App.css';
+import './index.css';
+import Employee from './components/Employee';
+import { useState } from 'react';
 
 function App() {
+  
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          My First React App!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Employee name = "Suman Saurav" role = "CEO"/>
+        <Employee name = "Hariom"/>
+        <Employee name = "Manish"/>
       </header>
     </div>
   );
