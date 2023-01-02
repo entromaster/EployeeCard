@@ -4,6 +4,7 @@ import { useState } from "react";
 import AddEmployee from "./components/AddEmployee";
 import { v4 as uuidv4 } from "uuid";
 import EditEmployee from "./components/EditEmployee";
+import Header from "./components/Header";
 function App() {
   const [employees, setEmployees] = useState([
     {
@@ -65,7 +66,8 @@ function App() {
 
   const showEmployees = true;
   return (
-    <div className="App">
+    <div className="App bg-gray-300 min-h-screen">
+      <Header />
       {showEmployees ? (
         <>
           <div className="flex flex-wrap justify-center space-x-4 space-y-4">
